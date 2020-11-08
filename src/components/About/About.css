@@ -1,0 +1,13 @@
+.about-quote .fa-quote-left {
+  position: absolute;
+  color: #f8f8f8;
+  font-size: 7em;
+  margin-top: -70px;
+  margin-left: -20px;
+  z-index: -1;
+}
+
+.about-quote .about-message-text {
+  font-weight: 200;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+.hero__section {
+  display: flex;
+  height: calc(100vh - 55px);
+  background: var(--light-color);
+  background-image: url("../../images/Ellipse_1.png"),
+    url("../../images/Ellipse_2.png");
+  background-position: top left, right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 762px) {
+  .hero__section {
+    background-image: url("../../images/Ellipse_1.png");
+  }
+}
+
+.hero__layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero__content--title {
+  max-width: 550px;
+}
+
+.hero__alt--text {
+  color: #f36d65;
+}

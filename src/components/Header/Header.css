@@ -1,0 +1,110 @@
+.mobile-ham {
+  display: none;
+  border: 0px;
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-ham {
+    display: block;
+  }
+}
+
+.mobile-ham:hover,
+.mobile-ham:focus {
+  cursor: pointer;
+  outline: 0px;
+}
+
+.mobile-ham .line {
+  width: 35px;
+  height: 4px;
+  background: #262626;
+  margin-bottom: 6px;
+  border-radius: 6px;
+}
+
+header {
+  height: 55px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.header--layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.nav--desktop ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav--desktop ul li {
+  margin-right: 2em;
+}
+.nav ul li a {
+  color: var(--text-dark);
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav--desktop {
+    display: none;
+  }
+}
+
+.nav--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav--mobile.active--mobile {
+    display: block;
+  }
+}
+
+.nav--mobile {
+  background-color: var(--light-color);
+  height: 100%;
+  left: 0;
+  z-index: 1;
+  min-height: 100vh;
+  position: fixed;
+  overflow-y: hidden;
+  top: 55px;
+  width: 100vw;
+  /* and for it to work add position fixed to body when active. */
+}
+
+.nav--mobile ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  height: calc(100vh - 55px);
+  padding: 2em;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav--mobile li {
+  font-size: 2em;
+}
+.nav--mobile li a {
+  color: #fff;
+  transition: all ease-in 0.25s;
+}
+
+.nav--mobile li a:hover,
+.nav--mobile li a:focus {
+  color: #c1c1c1;
+}
