@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Tech from "./components/Tech/Tech";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 
 import "./App.css";
@@ -30,6 +31,7 @@ function App() {
           <About />
           <Tech />
           <Projects />
+          <Contact />
         </div>
         <Footer />
       </div >

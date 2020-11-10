@@ -9,7 +9,7 @@ import Heading from '../Heading';
 function Projects() {
 
   return (
-    <Section theClass="projects__section" target="projects__section">
+    <Section theClass="projects__section" target="projects-section">
       <div className="container">
         <Heading title="Projects" subtitle="Some of my personal and professional projects that I have had fun working on." />
         <div className="projects">

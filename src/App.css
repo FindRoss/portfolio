@@ -44,6 +44,7 @@ h1 {
 
 .main-content {
   margin: 0 auto;
+  position: relative;
 }
 
 section h2 {
@@ -56,7 +57,7 @@ section h2 {
 
 footer {
   padding: 0.8em;
-  background: #fff;
+  background: #f1e9dd;
   text-align: center;
   font-size: 0.75em;
 }

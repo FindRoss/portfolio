@@ -1,8 +1,8 @@
 export const headingLinks = [
-  {
-    title: "About me",
-    href: "#about-section"
-  },
+  // {
+  //   title: "About me",
+  //   href: "#about-section"
+  // },
   {
     title: "Technologies",
     href: "#tech-section"

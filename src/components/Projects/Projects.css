@@ -1,5 +1,31 @@
 .projects__section {
   background: var(--light-color);
+  padding-top: 0px !important;
+  position: relative;
+}
+
+.projects__section:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -87px;
+  height: 87px;
+  background-color: #fff;
+  content: url("../../images/Curved_layer.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects__section:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  height: 16px;
+  background-color: #f1e9dd;
 }
 
 .project__layout--image {

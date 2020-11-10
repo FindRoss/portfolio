@@ -1,9 +1,20 @@
 import species from "../../images/star-wars-species-project.png";
-import todo from "../../images/react-todo-list-project.png"
+import todo from "../../images/react-todo-list-project.png";
+import chaser from "../../images/bitcoinchaser.png";
+// import streamers from "../../images/streamerrevierws.png";
 // import higher from "../../images/higher-lower-project-compressor.png";
 // import footy from "../../images/footy-fixture-project-compressor.png";
 
 export const projectData = [
+  {
+    image: chaser,
+    imgStart: 'start',
+    title: "BitcoinChaser",
+    description:
+      "A custom WordPress theme built with Bootstrap, utilizing custom post templates and custom fields.",
+    used: ["WordPress", "Bootstrap"],
+    url: "https://star-wars-species.herokuapp.com"
+  },
   {
     image: species,
     imgStart: '',

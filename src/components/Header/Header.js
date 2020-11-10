@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { headingLinks } from './data';
+import Logo from '../../images/Logo_2.png'
 
 
 import './Header.css';
@@ -33,7 +34,7 @@ function Header({ setBodyFixedFunc, setBodyUnfixedFunc }) {
     <header>
       <div className="container">
         <div className="header--layout">
-          <span className="logo">Ross Findlay</span>
+          <span className="logo"><img src={Logo} alt="Ross Findlay portfolio" height="35" width="auto" /></span>
           <nav className="nav nav--desktop">
             <ul>
               {headingLinks.map((link, index) => (
