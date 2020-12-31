@@ -12,7 +12,7 @@ function Contact() {
         <div className="contact">
           <div className="contact-item">
             <div className="contact-key">Phone</div>
-            <div className="contact-value">123456789</div>
+            <div className="contact-value">152-1527-5904</div>
           </div>
           <div className="contact-item">
             <div className="contact-key">Email</div>

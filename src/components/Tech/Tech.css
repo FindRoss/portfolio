@@ -16,14 +16,18 @@ li.tech {
 .tech-card {
   border-top: 6px solid var(--primary-color);
   padding: 1em;
-  min-height: 250px;
+  min-height: 200px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-card:before {
   content: "";
-  background: var(--light-color);
+  background: var(--light-color-300);
   position: absolute;
   z-index: -2;
   top: 0;
@@ -34,7 +38,7 @@ li.tech {
 
 .tech-card:after {
   content: "";
-  background-color: #f1e9de;
+  background-color: var(--light-color-400);
   border-radius: 50%;
   position: absolute;
   z-index: -1;
@@ -94,6 +98,18 @@ li.tech:nth-child(8) .tech-card:after {
   height: 23rem;
   top: -1.75rem;
   left: -9.1875rem;
+}
+
+.tech-card__icon {
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 5px solid var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {

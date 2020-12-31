@@ -1,30 +1,80 @@
 .hero__section {
-  display: flex;
-  height: calc(100vh - 55px);
-  background: var(--light-color);
-  background-image: url("../../images/Ellipse_1.png"),
-    url("../../images/Ellipse_2.png");
-  background-position: top left, right;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
-@media screen and (max-width: 762px) {
-  .hero__section {
-    background-image: url("../../images/Ellipse_1.png");
-  }
-}
-
-.hero__layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hero__section::before {
+  content: "";
+  position: absolute;
+  background: var(--light-color-300);
+  right: 0;
+  width: 50vw;
   height: 100%;
 }
 
-.hero__content--title {
-  max-width: 550px;
+.hero__media img {
+  z-index: 2;
 }
 
-.hero__alt--text {
-  color: #f36d65;
+/*
+.hero__media::before {
+  position: absolute;
+  content: " ";
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background: #f08680;
+  z-index: -1;
+  bottom: 0;
+  right: 23%;
+  top: 55%;
+  z-index: 1; 
+}
+*/
+
+.hero__layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .hero__layout {
+    flex-direction: column;
+  }
+  .hero__content {
+    padding-top: 50px;
+  }
+  .hero__section::before {
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+.hero__layout > div {
+  flex: 1;
+}
+
+.hero__content--title {
+  max-width: 350px;
+  text-align: center;
+}
+
+.hero__content--title h1 {
+  font-weight: 300;
+  line-height: 55px;
+}
+
+.hero__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.hero__media img {
+  max-height: 350px;
+  width: auto;
+  height: 100%;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.17);
 }

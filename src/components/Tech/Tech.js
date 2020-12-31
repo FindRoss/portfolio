@@ -9,13 +9,15 @@ function Tech() {
   return (
     <Section target="tech-section">
       <div className="container">
-        <Heading title="Technology" subtitle="Here are just a few the technongies I enjoy using and aim to continally imrpove at." />
+        <Heading title="Technology" subtitle="Here are just a few the technongies I enjoy using and aim to continally improve at." />
         <ul className="techs">
           {techData.map((t, i) => {
             return (
               <li key={i} className="tech">
                 <div className="tech-card">
-                  <i className={t.awesome}></i>
+                  <span className="tech-card__icon">
+                    <i className={t.awesome}></i>
+                  </span>
                   <h4>{t.name}</h4>
                 </div>
               </li>

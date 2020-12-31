@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import './Hero.css';
+import person from '../../images/person.jpg';
 
 export default function Hero() {
 
@@ -12,11 +13,15 @@ export default function Hero() {
         <div className="hero__layout">
           <div className="hero__content">
             <div className="hero__content--title">
-              <h1>Hello. I'm Ross. I am a <span className="hero__alt--text">Webmaster</span> and <span className="hero__alt--text">Frontend Deverloper</span></h1>
+              <h1>Hi,</h1>
+              <h1>I'm Ross.</h1><h1>I am a <span className="hero__alt--text">Frontend Deverloper</span></h1>
             </div>
+          </div>{/* Hero Layout */}
+          <div className="hero__media">
+            <img src={person} alt="profile" />
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
