@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import './Hero.css';
-import person from '../../images/person.jpg';
+import coding from '../../images/coding.jpg';
 
 export default function Hero() {
 
@@ -18,7 +18,7 @@ export default function Hero() {
             </div>
           </div>{/* Hero Layout */}
           <div className="hero__media">
-            <img src={person} alt="profile" />
+            <img src={coding} alt="profile" />
           </div>
         </div>
       </div>
